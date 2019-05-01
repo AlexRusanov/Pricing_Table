@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+@import url("https://use.typekit.net/dqa3fqp.css");
+
+table {
+    border-color: #3a4965;
+    border-width: 29px 30px 22px 27px;
+    border-style: solid;
+    color: #484848;
+    font-family: 'Arimo',courier-std, sans-serif;
+}
+
+td,
+th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    width: 157px;
+    font-weight: 700;
+}
+
+span {
+    display: block;
+    margin-top: 5px;
+}
+
+th:nth-of-type(2n),
+td:nth-of-type(2n) {
+    background: linear-gradient(to bottom, #e3e3e3 98%, #cacaca);
+}
+
+th:nth-of-type(2n+1),
+td:nth-of-type(2n+3) {
+    background: linear-gradient(to bottom, #f2f2f2 98%, #d7d7d7);
+}
+
+.table-title {
+    width: 198px;
+    height: 112px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #fafafa;
+}
+
+.table-title-span {
+    display: block;
+    font-size: 20px;
+}
+
+.product-standard-bg {
+    background-color: #89c331;
+}
+
+.product-ultimate-bg {
+    background-color: #f04a56;
+}
+
+.product-premium-bg {
+    background-color: #20807c;
+}
+
+.product-cell {
+    height: 167px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.product-price-standard:before {
+    content: '17';
+    font-size: 36px;
+    position: absolute;
+    left: -13px;
+    top: 18px;
+}
+
+.product-price-ultimate:before {
+    content: '37';
+    font-size: 36px;
+    position: absolute;
+    left: -13px;
+    top: 18px;
+}
+
+.product-price-premium:before {
+    content: '97';
+    font-size: 36px;
+    position: absolute;
+    left: -13px;
+    top: 18px;
+}
+
+.product-price {
+    font-size: 14px;
+    position: relative;
+    left: 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.product-price:after {
+    content: '.99';
+    font-size: 18px;
+    position: absolute;
+    left: 27px;
+    top: 21px;
+}
+
+.buy-btn {
+    display: inline-block;
+    width: 145px;
+    padding: 14px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    background-color: #484848;
+    box-shadow: 0 5px 0 #404040;
+}
+
+.buy-btn:hover {
+    box-shadow: 5px 5px 5px 5px #404040;
+}
