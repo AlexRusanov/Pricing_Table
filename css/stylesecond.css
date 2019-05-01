@@ -27,12 +27,12 @@ span {
 
 th:nth-of-type(2n),
 td:nth-of-type(2n) {
-    background: linear-gradient(to bottom, #e3e3e3 98%, #cacaca);
+    background: linear-gradient(to bottom, #e3e3e3 96%, #cacaca);
 }
 
 th:nth-of-type(2n+1),
 td:nth-of-type(2n+3) {
-    background: linear-gradient(to bottom, #f2f2f2 98%, #d7d7d7);
+    background: linear-gradient(to bottom, #f2f2f2 96%, #d7d7d7);
 }
 
 .table-title {

@@ -1,12 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
-@import url("https://use.typekit.net/dqa3fqp.css");
+/*@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');*/
+/*@import url("https://use.typekit.net/dqa3fqp.css");*/
+
+@font-face {
+    font-family: 'arimoregular';
+    src: url('../fonts/Arimo-Regular-webfont.eot');
+    src: url('../fonts/Arimo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arimo-Regular-webfont.woff') format('woff'),
+    url('../fonts/Arimo-Regular-webfont.ttf') format('truetype'),
+    url('../fonts/Arimo-Regular-webfont.svg#arimoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arimobold';
+    src: url('../fonts/Arimo-Bold-webfont.eot');
+    src: url('../fonts/Arimo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arimo-Bold-webfont.woff') format('woff'),
+    url('../fonts/Arimo-Bold-webfont.ttf') format('truetype'),
+    url('../fonts/Arimo-Bold-webfont.svg#arimobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 table {
     border-color: #3a4965;
     border-width: 24px 30px 32px 22px;
     border-style: solid;
     color: #484848;
-    font-family: 'Arimo',courier-std, sans-serif;
+    font-family: 'arimoregular'/*,courier-std, sans-serif*/;
 }
 
 td,
@@ -24,15 +48,15 @@ i {
 }
 
 .bg-header {
-    background-color: #fafafa;
+    background: linear-gradient(to left, #fafafa 98%, #dfdfdf);
     font-size: 18px;
-    border-left: solid 1px #dfdfdf;
 }
 
 .table-title {
     width: 310px;
     height: 156px;
-    font-weight: 700;
+    font-family: 'arimobold';
+    background: #fafafa;
 }
 
 .table-title-span {
@@ -55,7 +79,7 @@ i {
     background-color: #f04a56;
     color: #fff;
     font-size: 30px;
-    font-weight: 700;
+    font-family: 'arimobold';
 }
 
 .bg-dark-green {
@@ -64,7 +88,7 @@ i {
     background-color: #20807c;
     color: #fff;
     font-size: 24px;
-    font-weight: 700;
+    font-family: 'arimobold';
 }
 
 .header-price {
@@ -79,7 +103,7 @@ i {
     position: absolute;
     right: 167px;
     bottom: 19px;
-    font-weight: 700;
+    font-family: 'arimobold';
 }
 
 .header-dollars-std:before {
@@ -88,7 +112,7 @@ i {
     position: absolute;
     left: -20px;
     bottom: -12px;
-    font-weight: 700;
+    font-family: 'arimobold';
 }
 
 .header-dollars-ult:before {
@@ -97,7 +121,7 @@ i {
     position: absolute;
     left: -20px;
     bottom: -12px;
-    font-weight: 700;
+    font-family: 'arimobold';
 }
 
 .header-dollars-pre:before {
@@ -106,17 +130,15 @@ i {
     position: absolute;
     left: -20px;
     bottom: -12px;
-    font-weight: 700;
+    font-family: 'arimobold';
 }
 
 tr:nth-of-type(2n+3) td {
-    background-color: #f2f2f2;
-    border-left: solid 1px #d7d7d7;
+    background: linear-gradient(to left, #f2f2f2 98%, #d7d7d7);
 }
 
 tr:nth-of-type(2n+4) td{
-    background-color: #e3e3e3;
-    border-left: solid 1px #cccccc;
+    background: linear-gradient(to left, #e3e3e3 98%, #cccccc);
 }
 
 tr:last-of-type {
@@ -128,6 +150,7 @@ tr:last-of-type {
     width: 190px;
     padding: 17px 0;
     font-size: 16px;
+    font-family: 'arimobold';
     border-radius: 5px;
     color: white;
     text-align: center;
@@ -167,4 +190,8 @@ tr:last-of-type {
 
 .footer-bg-darlgreen:hover {
     box-shadow: 5px 5px 5px 5px #16736f;
+}
+
+tr:last-of-type td:first-of-type {
+    background: #dddddd;
 }
