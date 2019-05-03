@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
 @import url("https://use.typekit.net/dqa3fqp.css");
 
-table {
+.pricing-table2 {
     border-color: #3a4965;
     border-width: 29px 30px 22px 27px;
     border-style: solid;
@@ -9,29 +9,29 @@ table {
     font-family: 'Arimo',courier-std, sans-serif;
 }
 
-td,
-th {
+.table2-cell,
+.table2-header-cell {
     text-align: center;
     vertical-align: middle;
 }
 
-th {
+.table2-header-cell {
     width: 157px;
     font-weight: 700;
 }
 
-span {
+.block-span {
     display: block;
     margin-top: 5px;
 }
 
-th:nth-of-type(2n),
-td:nth-of-type(2n) {
+.table2-header-cell:nth-of-type(even),
+.table2-cell:nth-of-type(even) {
     background: linear-gradient(to bottom, #e3e3e3 96%, #cacaca);
 }
 
-th:nth-of-type(2n+1),
-td:nth-of-type(2n+3) {
+.table2-header-cell:nth-of-type(2n+3),
+.table2-cell:nth-of-type(2n+3) {
     background: linear-gradient(to bottom, #f2f2f2 96%, #d7d7d7);
 }
 

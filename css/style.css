@@ -25,7 +25,7 @@
 
 }
 
-table {
+.pricing-table {
     border-color: #3a4965;
     border-width: 24px 30px 32px 22px;
     border-style: solid;
@@ -33,17 +33,19 @@ table {
     font-family: 'arimoregular'/*,courier-std, sans-serif*/;
 }
 
-td,
-th {
+.pricing-table-cell,
+.pricing-table-header,
+.pricing-table-footer {
     text-align: center;
     vertical-align: middle;
 }
 
-td {
+.pricing-table-cell {
     height: 70px;
+    width: 277px;
 }
 
-i {
+.icons {
     margin-right: 10px;
 }
 
@@ -65,8 +67,6 @@ i {
 }
 
 .bg-light-green {
-    width: 277px;
-    height: 70px;
     background-color: #89c331;
     color: #fff;
     font-size: 24px;
@@ -74,8 +74,6 @@ i {
 }
 
 .bg-red {
-    width: 277px;
-    height: 70px;
     background-color: #f04a56;
     color: #fff;
     font-size: 30px;
@@ -83,8 +81,6 @@ i {
 }
 
 .bg-dark-green {
-    width: 277px;
-    height: 70px;
     background-color: #20807c;
     color: #fff;
     font-size: 24px;
@@ -133,16 +129,16 @@ i {
     font-family: 'arimobold';
 }
 
-tr:nth-of-type(2n+3) td {
+tr:nth-of-type(2n+3) .pricing-table-cell {
     background: linear-gradient(to left, #f2f2f2 98%, #d7d7d7);
 }
 
-tr:nth-of-type(2n+4) td{
+tr:nth-of-type(2n+4) .pricing-table-cell{
     background: linear-gradient(to left, #e3e3e3 98%, #cccccc);
 }
 
-tr:last-of-type {
-    height: 110px;
+.footer {
+    padding: 25px 40px;
 }
 
 .footer-btn {
@@ -192,6 +188,15 @@ tr:last-of-type {
     box-shadow: 5px 5px 5px 5px #16736f;
 }
 
-tr:last-of-type td:first-of-type {
+.pricing-table-footer:nth-of-type(even) {
+    background: linear-gradient(to left, #eeeeee 98%, #d4d4d4);
+}
+
+.pricing-table-footer:nth-of-type(odd) {
+    background: linear-gradient(to left, #f4f4f4 98%, #d7d8db);
+}
+
+tr:last-of-type .pricing-table-footer:first-of-type {
+    padding: 25px 60px;
     background: #dddddd;
 }
